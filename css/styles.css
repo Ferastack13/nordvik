@@ -220,12 +220,26 @@ h1, h2, h3, h4 {
   margin-inline: auto;
 }
 .nav-logo {
-  font-size: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   z-index: 10;
   justify-self: start;
+}
+.nav-logo img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.55rem;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 1px 4px rgba(59, 59, 56, 0.2);
+}
+.nav-logo span {
+  line-height: 1;
 }
 .nav-links {
   display: flex;

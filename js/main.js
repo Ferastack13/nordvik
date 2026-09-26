@@ -3,7 +3,10 @@
 const HEADER_HTML = `
 <header class="site-header" id="site-header" data-over-dark="false">
   <nav class="nav" aria-label="Primary">
-    <a class="nav-logo" href="index.html">Nordvik</a>
+    <a class="nav-logo" href="index.html" aria-label="Nordvik home">
+      <img src="assets/nordvik-logo.png" alt="" width="40" height="40">
+      <span>Nordvik</span>
+    </a>
     <ul class="nav-links">
       <li class="has-mega">
         <a class="nav-link" href="furniture.html" data-nav="furniture">Furniture</a>
