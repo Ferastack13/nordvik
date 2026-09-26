@@ -1,0 +1,9 @@
+{
+  "name": "nordvik",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Nordvik — premium Scandinavian furniture website",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}
