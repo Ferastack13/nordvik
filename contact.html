@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Nordvik</title>
+  <meta name="description" content="Visit Nordvik showrooms in Copenhagen, Stockholm, and Oslo. Book a design consultation or enquire about trade and partnerships.">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contact" data-solid-nav="true">
+  <div id="header-mount"></div>
+
+  <header class="page-hero">
+    <div class="container-wide">
+      <p class="eyebrow reveal">Contact</p>
+      <h1 class="display reveal reveal-delay-1">Visit us, or begin a conversation</h1>
+      <p class="lede reveal reveal-delay-2" style="margin-top: 1rem;">Our showrooms are quiet places to sit, touch materials, and imagine your home with guidance from our design team.</p>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container-wide">
+      <div class="contact-services">
+        <div class="service-block reveal">
+          <h3>Design Consultation</h3>
+          <p>One-to-one sessions in-store or online — room planning, material selection, and collection pairing for your home.</p>
+        </div>
+        <div class="service-block reveal reveal-delay-1">
+          <h3>Trade &amp; Architects</h3>
+          <p>Dedicated support for interior designers and architects, including project pricing and specification resources.</p>
+        </div>
+        <div class="service-block reveal reveal-delay-2">
+          <h3>Customer Care</h3>
+          <p>Orders, delivery, care guidance, and aftercare. We stay with you long after furniture arrives home.</p>
+        </div>
+      </div>
+
+      <div class="contact-layout">
+        <div class="reveal">
+          <p class="eyebrow">Write to us</p>
+          <h2 class="display-sm" style="margin: 1rem 0 1.75rem;">Send a message</h2>
+          <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('.btn').textContent='Message sent';">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required autocomplete="name">
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required autocomplete="email">
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="interest">I am interested in</label>
+              <select id="interest" name="interest">
+                <option>Design consultation</option>
+                <option>Showroom visit</option>
+                <option>Product enquiry</option>
+                <option>Trade / partnership</option>
+                <option>Customer support</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Tell us about your space or enquiry"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Send message</button>
+          </form>
+        </div>
+
+        <div class="reveal reveal-delay-1">
+          <p class="eyebrow">Showrooms</p>
+          <h2 class="display-sm" style="margin: 1rem 0 1.75rem;">Find Nordvik</h2>
+          <div class="showrooms">
+            <article class="showroom">
+              <h3>Copenhagen</h3>
+              <p>Strandgade 42<br>1401 Copenhagen K<br>Denmark</p>
+              <p>Mon–Sat 10–18 · Sun 11–16</p>
+              <a href="mailto:copenhagen@nordvik.com">copenhagen@nordvik.com</a>
+            </article>
+            <article class="showroom">
+              <h3>Stockholm</h3>
+              <p>Nybrogatan 18<br>114 39 Stockholm<br>Sweden</p>
+              <p>Mon–Sat 10–18 · Sun closed</p>
+              <a href="mailto:stockholm@nordvik.com">stockholm@nordvik.com</a>
+            </article>
+            <article class="showroom">
+              <h3>Oslo</h3>
+              <p>Frognerveien 12<br>0257 Oslo<br>Norway</p>
+              <p>Mon–Fri 10–18 · Sat 10–16</p>
+              <a href="mailto:oslo@nordvik.com">oslo@nordvik.com</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-band" aria-label="Nordic showroom atmosphere">
+    <img src="https://images.unsplash.com/photo-1505843513577-22bb7d21a455?auto=format&fit=crop&w=2000&q=80" alt="Copenhagen waterfront near the showroom" width="2000" height="900" loading="lazy">
+  </section>
+
+  <div id="footer-mount"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furniture — Nordvik</title>
+  <meta name="description" content="Browse Nordvik furniture by room — sofas, dining, bedrooms, lighting, and outdoor pieces crafted for modern Scandinavian living.">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="furniture" data-solid-nav="true">
+  <div id="header-mount"></div>
+
+  <header class="page-hero">
+    <div class="container-wide">
+      <p class="eyebrow reveal">Furniture</p>
+      <h1 class="display reveal reveal-delay-1">Pieces for everyday living</h1>
+      <p class="lede reveal reveal-delay-2" style="margin-top: 1rem;">A curated catalog of sofas, tables, seating, storage, and lighting — presented as design objects for real homes.</p>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container-wide">
+      <div class="filter-bar reveal" role="tablist" aria-label="Filter by room">
+        <button class="filter-btn is-active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="living">Living</button>
+        <button class="filter-btn" data-filter="dining">Dining</button>
+        <button class="filter-btn" data-filter="bedroom">Bedroom</button>
+        <button class="filter-btn" data-filter="office">Office</button>
+        <button class="filter-btn" data-filter="lighting">Lighting</button>
+        <button class="filter-btn" data-filter="outdoor">Outdoor</button>
+      </div>
+
+      <!-- Living intro + mosaic -->
+      <div class="catalog-layout">
+        <div class="catalog-block" id="living">
+          <div class="catalog-copy reveal">
+            <p class="eyebrow">Living Room</p>
+            <h2>Soft architecture for gathering</h2>
+            <p>Sofas, lounge chairs, and low tables designed to hold conversation, quiet mornings, and the soft rhythm of family life.</p>
+            <a class="btn-ghost" href="product.html">View Fjord Sofa <span class="arrow">→</span></a>
+          </div>
+          <div class="catalog-visual">
+            <a href="product.html" class="product-tile span-2" data-category="living">
+              <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80" alt="Fjord Sofa in living room" width="1200" height="750" loading="lazy">
+              <div class="product-tile-meta"><h3>Fjord Sofa</h3><span>Bouclé · from $4,280</span></div>
+            </a>
+            <a href="product.html" class="product-tile" data-category="living">
+              <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=700&q=80" alt="Lounge chair" width="700" height="875" loading="lazy">
+              <div class="product-tile-meta"><h3>Nest Lounge</h3><span>Wool · from $1,920</span></div>
+            </a>
+            <a href="product.html" class="product-tile" data-category="living">
+              <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=700&q=80" alt="Coffee table" width="700" height="875" loading="lazy">
+              <div class="product-tile-meta"><h3>Aria Table</h3><span>Oak & stone · from $1,640</span></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="catalog-block" id="dining">
+          <div class="catalog-copy reveal">
+            <p class="eyebrow">Dining</p>
+            <h2>Tables made for lingering</h2>
+            <p>Solid wood dining tables and chairs with generous proportions — built for shared meals that stretch into evening.</p>
+          </div>
+          <div class="catalog-visual">
+            <a href="product.html" class="product-tile span-2" data-category="dining">
+              <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1200&q=80" alt="Dining setting" width="1200" height="750" loading="lazy">
+              <div class="product-tile-meta"><h3>Harbour Dining Table</h3><span>Solid oak · from $3,450</span></div>
+            </a>
+            <a href="product.html" class="product-tile" data-category="dining">
+              <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=700&q=80" alt="Dining chair" width="700" height="875" loading="lazy">
+              <div class="product-tile-meta"><h3>Sol Chair</h3><span>Walnut · from $890</span></div>
+            </a>
+            <a href="product.html" class="product-tile" data-category="dining">
+              <img src="https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&w=700&q=80" alt="Dining bench" width="700" height="875" loading="lazy">
+              <div class="product-tile-meta"><h3>Line Bench</h3><span>Oak · from $1,180</span></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mosaic browse -->
+      <div class="section-header reveal" style="margin-top: var(--space-3xl);" id="signatures">
+        <div>
+          <p class="eyebrow">Browse</p>
+          <h2 class="display-sm">All pieces</h2>
+        </div>
+      </div>
+
+      <div class="product-mosaic">
+        <a href="product.html" class="mosaic-item mosaic-item--lg" data-category="bedroom" id="bedroom">
+          <div class="mosaic-media reveal-img reveal">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1100&q=80" alt="Bedroom collection" width="1100" height="750" loading="lazy">
+          </div>
+          <div class="mosaic-meta"><h3>Drift Bed</h3><p>Oak frame · Natural linen · from $3,890</p></div>
+        </a>
+        <a href="product.html" class="mosaic-item" data-category="bedroom">
+          <div class="mosaic-media reveal-img reveal">
+            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=700&q=80" alt="Nightstand" width="700" height="875" loading="lazy">
+          </div>
+          <div class="mosaic-meta"><h3>Still Nightstand</h3><p>Walnut · from $780</p></div>
+        </a>
+        <a href="product.html" class="mosaic-item" data-category="office" id="office">
+          <div class="mosaic-media reveal-img reveal">
+            <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba9cc?auto=format&fit=crop&w=700&q=80" alt="Desk" width="700" height="875" loading="lazy">
+          </div>
+          <div class="mosaic-meta"><h3>Focus Desk</h3><p>Oak · from $2,140</p></div>
+        </a>
+        <a href="product.html" class="mosaic-item mosaic-item--wide" data-category="lighting" id="lighting">
+          <div class="mosaic-media reveal-img reveal">
+            <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=1200&q=80" alt="Lighting" width="1200" height="825" loading="lazy">
+          </div>
+          <div class="mosaic-meta"><h3>Halo Pendant</h3><p>Brushed brass · Linen shade · from $620</p></div>
+        </a>
+        <a href="product.html" class="mosaic-item" data-category="lighting">
+          <div class="mosaic-media reveal-img reveal">
+            <img src="https://images.unsplash.com/photo-1543198126-a87adbf949da?auto=format&fit=crop&w=700&q=80" alt="Floor lamp" width="700" height="875" loading="lazy">
+          </div>
+          <div class="mosaic-meta"><h3>Arc Floor Lamp</h3><p>Steel · from $980</p></div>
+        </a>
+        <a href="product.html" class="mosaic-item" data-category="living">
+          <div class="mosaic-media reveal-img reveal">
+            <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=700&q=80" alt="Storage" width="700" height="875" loading="lazy">
+          </div>
+          <div class="mosaic-meta"><h3>Frame Sideboard</h3><p>Oak · from $2,560</p></div>
+        </a>
+        <a href="product.html" class="mosaic-item mosaic-item--lg" data-category="outdoor" id="outdoor">
+          <div class="mosaic-media reveal-img reveal">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1100&q=80" alt="Outdoor furniture" width="1100" height="750" loading="lazy">
+          </div>
+          <div class="mosaic-meta"><h3>Terrace Lounge Set</h3><p>Teak · Outdoor linen · from $5,200</p></div>
+        </a>
+        <a href="product.html" class="mosaic-item" data-category="living">
+          <div class="mosaic-media reveal-img reveal">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=700&q=80" alt="Decor accessories" width="700" height="875" loading="lazy">
+          </div>
+          <div class="mosaic-meta"><h3>Ceramic Vessel Set</h3><p>Stoneware · from $240</p></div>
+        </a>
+      </div>
+
+      <!-- Materials -->
+      <div class="reveal" style="margin-top: var(--space-3xl);">
+        <p class="eyebrow">Materials</p>
+        <h2 class="display-sm" style="margin: 1rem 0 0.5rem;">Chosen for touch and time</h2>
+        <p class="lede">Every Nordvik piece begins with honest materials that age beautifully.</p>
+        <div class="material-strip">
+          <div class="material-swatch swatch-oak">Oak</div>
+          <div class="material-swatch swatch-walnut">Walnut</div>
+          <div class="material-swatch swatch-linen">Linen</div>
+          <div class="material-swatch swatch-stone">Stone</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-mount"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
